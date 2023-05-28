@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="shortcut icon" href="favicon-calcu.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <main data-theme="dark">
+        <header class="header">
+            <div class="header-title">
+                <i class="fa-solid fa-calculator"></i>
+                <h1><a href="calculadora.html">Calc.js</a></h1>  
+            </div>
+            <div class="header-theme">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <button id="themeSwitcher">Switch Theme Dark/Light</button>
+            </div>
+        </header>
+
+        <input type="text" id="input">
+        <div id="keys">
+            <button id="clear">C</button>
+            <button class="charKey" data-value=" ( ">(</button>
+            <button class="charKey" data-value=" ) ">)</button>
+            <button class="charKey" data-value=" / ">/</button>
+            <button class="charKey" data-value="7">7</button>
+            <button class="charKey" data-value="8">8</button>
+            <button class="charKey" data-value="9">9</button>
+            <button class="charKey" data-value=" * ">*</button>
+            <button class="charKey" data-value="4">4</button>
+            <button class="charKey" data-value="5">5</button>
+            <button class="charKey" data-value="6">6</button>
+            <button class="charKey" data-value=" - ">-</button>
+            <button class="charKey" data-value="1">1</button>
+            <button class="charKey" data-value="2">2</button>
+            <button class="charKey" data-value="3">3</button>
+            <button class="charKey" data-value=" + ">+</button>
+            <button class="charKey" data-value="0">0</button>
+            <button class="charKey" data-value=".">.</button>
+            <button class="charKey" data-value=" % ">mod</button>
+            <button id="equal">=</button>
+        </div>
+
+        <section class="section-copy-result">
+            <button id="copyToClipboard">Copy</button>
+            <input type="text" id="result" disabled>
+        </section>
+    </main>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
